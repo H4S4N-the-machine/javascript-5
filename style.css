@@ -1,0 +1,109 @@
+            /* ⭐⭐common css⭐⭐ */
+
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+             /*⭐⭐common css⭐⭐  */
+
+
+
+             /* ⭐⭐navbar starts⭐⭐ */
+
+ nav{
+    background-color: #555;
+    padding: 10px 0;
+ }
+
+ nav .sidebarBtn{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+ }
+              
+              /* ⭐⭐navbar end⭐⭐ */
+
+
+               /* ⭐⭐sidebar start⭐⭐ */
+
+.sidebar{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+}    
+
+.sidebarCnt{
+    background-color: whitesmoke;
+    height: 100vh;
+    overflow-y: auto;
+    max-width: 350px;
+    width: 80%;
+    padding-top: 30px;
+    position: relative;
+    transform: translateX(-100%);
+}
+
+.sidebarlogo{
+    width: 200px;
+    margin: auto;
+}
+.sidebarlogo img{
+    width: 100%;
+    text-align: center;
+}
+
+.sidebarCnt ul{
+    text-align: center;
+    padding-top: 20px;
+    line-height: 30px;
+    
+}
+
+.sidebarCnt ul li a{
+    color: rgb(148, 4, 121);
+    font-family: fantasy;
+}
+
+ .active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar.active .sidebarCnt{
+
+    transform: translateX(0);
+
+}
+  
+
+           /* <!-- ⭐⭐cancel button start⭐⭐ --> */
+
+.cancel{
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    color: rgb(220, 15, 50);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+          /* <!-- ⭐⭐cancel button end⭐⭐ --> */
